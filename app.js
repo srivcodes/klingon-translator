@@ -1,37 +1,20 @@
-var recommendbutton= document.querySelector("#btn-recommend");
-var inputtext= document.querySelector("#input-txt");
-var outputtext=document.querySelector("#output-txt");
+var textArea = document.querySelector("textarea")
+var btn = document.querySelector("button")
+var ans = document.querySelector("#output")
 
-var serverurl="https://api.spotify.com.";
+var serverUrl = "https://api.funtranslations.com/translate/klingon.json"
 
-function recommendurl(text){
-    return serverurl + "?" + "text=" + text;
+function convertUrl(input){
+    return serverUrl + "?" + "text=" + input
 }
 
-function errorHandler(error) {
-    console.log("error occured", error);
-    alert("something wrong with server! try again after some time")
-}
+function translate(input){
+    var input = textArea.value
+    fetch(convertUrl(input))
+    .then(response => response.json())
+    .then(json => {
+      var output = json.contents.translated
+      ans.innerText =  output })}
 
-// outputtext.innerText ="sriv";
-
-//console.log(inputtext);
-
-recommendbutton.addEventListener("click", eventHandler)
-
-function eventHandler(){
-
-    var txtip = inputtext.value;
-    fetch(recommendurl(txtip))
-    .then(response => {
-        response.json();
-        console.log(response.json());
-    }
-     );
-  
-    // .then(json => {
-    //     var recommendedsong = json.contents;
-    //     outputDiv.innerText = recommendedsong;
-    // })
-    // .catch(errorHandler)
-}
+btn.addEventListener("click",translate)
+    

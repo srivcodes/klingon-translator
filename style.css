@@ -1,5 +1,89 @@
-#output-txt {
-    border: 1px solid black;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+body{
+    margin:0;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: black;
+}
+img{
+    width: 50px;
+}
+nav{
+    background-color:#B91C1C;
+    text-align: center;
     height:10vh;
-    width: 80%;
+    padding-top: 0.5em;
+    font-size: 3em;
+
+}
+#wc{
+    text-align: center;
+    font-size: x-large;
+    color:white;
+}
+#wp{
+    text-align: center;
+    font-size: large;
+    color:white;
+}
+textarea{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 30vh;
+    max-width: 80%;
+    width: 40em;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 3em;
+    padding-top: 0.8em;
+    padding-left: 1em;
+    font-size:large;
+    background-color: #DBEAFE;
+}
+textarea:hover, #output:hover{
+    border: solid 2px #B91C1C;
+
+}
+button{
+    background-color: #B91C1C;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    padding: 0.5em;
+    width: 10em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    border-radius: 1.3em;
+    border: solid 1px #7F1D1D;
+    color:white;
+
+}
+button:hover{
+    background-color: #065F46;
+    border: solid 1px #065F46;
+    color:white;
+
+}
+h2{
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 1em;
+    color:white;
+}
+#output{
+    border: 1px solid black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+    width: 35em;
+    height: 8vh;
+    font-size: large;
+}
+#logos{
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
