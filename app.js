@@ -23,8 +23,12 @@ function eventHandler(){
 
     var txtip = inputtext.value;
     fetch(recommendurl(txtip))
-    .then(response => response.json());
-    console.log(response.json);
+    .then(response => {
+        response.json();
+        console.log(response.json());
+    }
+     );
+  
     // .then(json => {
     //     var recommendedsong = json.contents;
     //     outputDiv.innerText = recommendedsong;
