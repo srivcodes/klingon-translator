@@ -17,4 +17,13 @@ function translate(input){
       ans.innerText =  output })}
 
 btn.addEventListener("click",translate)
+
+function tweetTweet(){
+    var url= "https://twitter.com/intent/tweet";
+    var text = document.getElementById("output").value;
+    var hashtags="teamtanay ,neogcamp ,klingontranslation";
+    var via="@tanaypratap";
+    window.open(url+"?text="+text+"  "+hashtags+"  "+via," ",
+    "width = 500,height= 300");
+}
     
