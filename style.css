@@ -87,3 +87,21 @@ h2{
     margin-left: auto;
     margin-right: auto;
 }
+
+@media (min-width:376px) and (max-width: 425px){
+    nav{
+        visibility: hidden; 
+    }
+}
+
+@media (min-width:321px) and (max-width: 375px){
+    nav{
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 320px){
+    nav{
+        visibility: hidden;
+    }  
+}
