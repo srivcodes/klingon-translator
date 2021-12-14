@@ -21,8 +21,8 @@ btn.addEventListener("click",translate)
 function tweetTweet(){
     var url= "https://twitter.com/intent/tweet";
     var text = document.getElementById("output").value;
-    var hashtags="teamtanay ,neogcamp ,klingontranslation";
-    var via="@tanaypratap";
+    var hashtags="is my klingontranslation";
+    var via=".I used klingon translator by @MysoreSrividya";
     window.open(url+"?text="+text+"  "+hashtags+"  "+via," ",
     "width = 500,height= 300");
 }
